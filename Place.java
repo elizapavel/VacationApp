@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  */
 
-public class Place implements BasicDetails {
+public class Place implements BasicDetails, Visitable {
 	private String name;
 	private String cityName;
 	private double mediumPrice;
@@ -75,6 +75,11 @@ public class Place implements BasicDetails {
 
 	public double getMediumPrice() {
 		return mediumPrice;
+	}
+
+	@Override
+	public void accept(Visitor v) {
+		v.visit(this);
 	}
 
 }

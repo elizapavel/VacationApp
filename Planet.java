@@ -10,7 +10,7 @@ import java.util.Comparator;
  *
  */
 
-public class Planet implements BasicDetails {
+public class Planet implements BasicDetails, Visitable {
 	private String name;
 	private ArrayList<String> countries;
 	private double mediumPriceSum = 0;
@@ -77,5 +77,10 @@ public class Planet implements BasicDetails {
 		};
 
 		countries.sort(c);
+	}
+
+	@Override
+	public void accept(Visitor v) {
+		v.visit(this);
 	}
 }

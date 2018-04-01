@@ -16,11 +16,30 @@ public class Main {
 	public static void main(String[] args) {
 
 		readFile("src/firstTest.in");
-		showHierarchy();
+//		showHierarchy();
 		
-		Activity a = HierarchyObjects.activities.get("Activity 1");
-		System.out.println(a.getPlace().getName() + " " + a.getPlace().getMediumPrice());
-
+//		Activity a = HierarchyObjects.activities.get("Activity 1");
+//		System.out.println(a.getPlace().getName() + " " + a.getPlace().getMediumPrice());
+		Visitor v = new ShowInfo();
+		Place p = HierarchyObjects.places.get("Place 6");
+		p.accept(v);
+		System.out.println();
+		
+		City c = HierarchyObjects.cities.get("City 3");
+		c.accept(v);
+		System.out.println();
+		
+		District d = HierarchyObjects.districts.get("District 1");
+		d.accept(v);
+		System.out.println();
+		
+		Country co = HierarchyObjects.countries.get("Country 1");
+		co.accept(v);
+		System.out.println();
+		
+		Planet pl = HierarchyObjects.planets.get("Earth");
+		pl.accept(v);
+		System.out.println();
 	}
 
 	
@@ -95,8 +114,8 @@ public class Main {
 				String[] info = line.split(",");
 				HierarchyObjects.places.put(info[0], new Place(info[0], info[1], Double.parseDouble(info[2])));
 				Place p = HierarchyObjects.places.get(info[0]);
-				for (int j = 2; j < info.length; j++) {
-					String[] piece = info[3].split(" ");
+				for (int j = 3; j < info.length; j++) {
+					String[] piece = info[j].split(" ");
 					DateInterval date = new DateInterval(
 							Integer.parseInt(piece[0]), Integer.parseInt(piece[1]),
 							Integer.parseInt(piece[2]), Integer.parseInt(piece[3]),

@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  */
 
-public class District implements BasicDetails {
+public class District implements BasicDetails, Visitable {
 	private String name;
 	private String countryName;
 	private ArrayList<String> cities;
@@ -81,6 +81,11 @@ public class District implements BasicDetails {
 		};
 		
 		cities.sort(c);
+	}
+
+	@Override
+	public void accept(Visitor v) {
+		v.visit(this);
 	}
 
 }
