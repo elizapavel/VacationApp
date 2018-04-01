@@ -1,0 +1,71 @@
+1,5,10,20,30,4
+Earth
+Country 1,Earth
+Country 2,Earth
+Country 3,Earth
+Country 4,Earth
+Country 5,Earth
+District 1,Country 1
+District 2,Country 1
+District 3,Country 1
+District 4,Country 2
+District 5,Country 2
+District 6,Country 3
+District 7,Country 4
+District 8,Country 4
+District 9,Country 5
+District 10,Country 5
+City 1,District 1
+City 2,District 1
+City 3,District 1
+City 4,District 2
+City 5,District 2
+City 6,District 2
+City 7,District 3
+City 8,District 4
+City 9,District 4
+City 10,District 5
+City 11,District 5
+City 12,District 5
+City 13,District 5
+City 14,District 5
+City 15,District 6
+City 16,District 7
+City 17,District 7
+City 18,District 8
+City 19,District 9
+City 20,District 10
+Place 1,City 1,1234,2018 03 18 2018 05 18
+Place 2,City 1,436,2018 03 1 2018 08 8
+Place 3,City 2,57568,2018 02 26 2018 4 6
+Place 4,City 2,464,2018 07 13 2018 09 13
+Place 5,City 3,4574,2018 07 19 2018 10 20
+Place 6,City 3,87,2018 06 12 2018 06 20,2018 08 14 2018 08 28 
+Place 7,City 3,346,2018 01 20 2018 04 26
+Place 8,City 4,3467,2018 04 6 2018 05 6
+Place 9,City 5,23566,2018 04 2 2018 08 23
+Place 10,City 5,457,2018 05 4 2018 10 12
+Place 11,City 6,54748,2018 05 23 2018 06 23
+Place 12,City 6,367,2018 02 14 2018 05 23
+Place 13,City 6,58679,2018 07 20 2018 09 20
+Place 14,City 7,54575,2018 08 27 2018 10 27
+Place 15,City 8,4368,2018 08 15 2019 01 20
+Place 16,City 9,4367,2018 09 16 2018 11 28
+Place 17,City 9,578,2018 07 28 2018 09 15
+Place 18,City 10,858,2018 10 18 2019 2 25
+Place 19,City 11,8979,2018 11 2 2019 3 2
+Place 20,City 12,6794,2018 12 25 2019 1 10,2019 5 5 2019 7 10
+Place 21,City 13,347,2018 12 24 2019 3 30 
+Place 22,City 14,6589,2018 12 13 2019 5 28
+Place 23,City 15,3467,2018 7 23 2018 9 10
+Place 24,City 16,4347,2018 8 10 2018 10 20
+Place 25,City 17,689,2018 8 12 2018 10 16
+Place 26,City 18,4578,2018 7 2 2018 9 20
+Place 27,City 19,3467,2018 4 9 2018 7 18
+Place 28,City 20,436,2018 5 29 2018 9 19
+Place 29,City 20,4677,2018 03 31 2018 08 3
+Place 30,City 20,346,2018 06 8 2018 10 15
+Activity 1,Place 1,Place 3,Place 2,Place 5,Place 6
+Activity 2,Place 10,Place 11,Place 14,Place 20,Place 24,Place 2,Place 13,Place 26,Place 6
+Activity 3,Place 4
+Activity 4,Place 8,Place 10,Place 12
